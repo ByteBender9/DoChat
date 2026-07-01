@@ -1,0 +1,58 @@
+/* Channel Sidebar */
+.sidebar {
+    width: 250px;
+    background: var(--channel);
+    padding: 20px;
+}
+
+.sidebar ul {
+    margin-bottom: 20px;
+    font-size: 18px;
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 12px;
+    border-radius: 8px;
+    color: #b5bac1;
+    margin-bottom: 6px;
+    cursor: pointer;
+    transition: .2s;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li:hover {
+    background: var(--card);
+    color: white;
+    transform: translateX(6px);
+}
+
+.sidebar li.active {
+    background: var(--card);
+    color: white;
+}
+
+.sidebar i {
+    margin-right: 8px;
+}
+
+/* Members Sidebar */
+.members {
+    width: 240px;
+    background: var(--channel);
+    padding: 20px;
+}
+
+.members h3 {
+    color: #949ba4;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}

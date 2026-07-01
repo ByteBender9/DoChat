@@ -1,0 +1,57 @@
+.moment-viewer{
+
+    position:fixed;
+
+    inset:0;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.75);
+
+    z-index:9999;
+
+}
+
+.moment-modal{
+
+    width:700px;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+.moment-modal img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.moment-details{
+
+    padding:20px;
+
+}
+
+#closeMoment{
+
+    position:absolute;
+
+    top:30px;
+
+    right:40px;
+
+    font-size:32px;
+
+    cursor:pointer;
+
+    color:white;
+
+}

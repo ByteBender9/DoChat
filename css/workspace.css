@@ -1,0 +1,25 @@
+.workspace-header{
+    padding:25px;
+}
+
+.workspace-tabs{
+    display:flex;
+    gap:12px;
+    padding:0 25px 20px;
+    overflow-x:auto;
+}
+
+.tab{
+    padding:10px 18px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.tab.active{
+    font-weight:bold;
+}
+
+#workspaceContent{
+    padding:25px;
+}

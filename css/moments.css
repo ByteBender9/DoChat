@@ -1,0 +1,130 @@
+.moments-page{
+
+    width:100%;
+    padding:35px;
+
+}
+
+.moments-header{
+
+    margin-bottom:25px;
+
+}
+
+.moments-header p{
+
+    color:#999;
+
+}
+
+.your-moment{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:20px;
+
+    border-radius:16px;
+
+    margin-bottom:30px;
+
+}
+
+.share-btn{
+
+    margin-left:auto;
+
+    padding:10px 20px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+.section-title{
+
+    margin-bottom:20px;
+
+    font-size:20px;
+
+}
+
+.moment-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.moment-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.moment-card:hover{
+
+    transform:translateX(8px);
+
+}
+
+.moment-avatar img{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:50%;
+
+}
+
+.moment-info{
+
+    flex:1;
+
+}
+
+.moment-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:8px;
+
+}
+
+.moment-top span{
+
+    color:#888;
+
+    font-size:13px;
+
+}
+
+.moment-info p{
+
+    color:#ccc;
+
+}

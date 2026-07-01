@@ -1,0 +1,142 @@
+.space-page{
+    display:grid;
+    grid-template-columns:320px 1fr;
+    gap:30px;
+    height:100%;
+}
+
+.space-left{
+    display:flex;
+    flex-direction:column;
+}
+
+.space-workspace{
+    padding:25px;
+    border-left:1px solid rgba(255,255,255,.08);
+}
+
+.workspace-tabs{
+    display:flex;
+    gap:10px;
+    margin:20px 0;
+    flex-wrap:wrap;
+}
+
+.tab{
+    padding:10px 18px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.space-header p{
+    color:#888;
+    margin-top:6px;
+}
+
+.space-search input{
+    width:100%;
+    margin:20px 0;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    font-size:15px;
+}
+
+.create-space-btn{
+    padding:12px 18px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    margin-bottom:25px;
+}
+
+.space-list{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.space-card{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:18px;
+    margin-top:15px;
+    border-radius:14px;
+    transition:.25s;
+}
+
+.space-card:hover{
+    transform:translateY(-3px);
+}
+
+.space-icon{
+    font-size:32px;
+}
+
+.space-info{
+    flex:1;
+    margin-left:18px;
+}
+
+.open-space{
+    padding:10px 18px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.space-card i{
+
+    font-size:30px;
+
+}
+
+.space-chat{
+
+    width:100%;
+
+    padding:30px;
+
+}
+
+.space-channels{
+
+    margin-top:30px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.space-channels div{
+
+    padding:15px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.space-channels div:hover{
+
+    transform:translateX(8px);
+
+}
+
+#backSpace{
+
+    margin-bottom:25px;
+
+    padding:10px 15px;
+
+    cursor:pointer;
+
+}

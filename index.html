@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoChat</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Main Sidebar Navigation -->
+        <aside class="navigation">
+            <div class="logo">
+                <h2>D</h2>
+            </div>
+            <div class="nav-item active" data-page="home">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <div class="nav-item" data-page="chat">
+                <i class="fa-solid fa-comments"></i>
+            </div>
+            <div class="nav-item" data-page="space">
+                <i class="fa-solid fa-users"></i>
+            </div>
+            <div class="nav-item" data-page="story">
+                <i class="fa-solid fa-camera"></i>
+            </div>
+            <div class="nav-item" data-page="games">
+                <i class="fa-solid fa-gamepad"></i>
+            </div>
+            <div class="nav-item" data-page="ai">
+                <i class="fa-solid fa-robot"></i>
+            </div>
+            <div class="bottom-nav">
+                <div class="nav-item" data-page="settings">
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Dynamic Page Container -->
+        <div class="page-container">
+
+            <!-- Home Page -->
+            <div id="homePage" class="page active-page">
+                <div class="home">
+                    <h1>👋 Welcome to DoChat</h1>
+                    <h3>Chat. Create. Connect.</h3>
+                    <br>
+                    <div class="home-card">💬 Continue Chatting</div>
+                    <div class="home-card">👥 Communities</div>
+                    <div class="home-card">📷 Stories</div>
+                    <div class="home-card">🤖 AI Assistant</div>
+                </div>
+            </div> 
+
+            <!-- Chat Page -->
+            <div id="chatPage" class="page">
+                <aside class="sidebar">
+                    <h2>Chats</h2>
+                    <ul>
+                        <li class="active"><i class="fa-solid fa-comments"></i> All Chats</li>
+                        <li><i class="fa-solid fa-star"></i> Favorites</li>
+                        <li><i class="fa-solid fa-users"></i> Groups</li>
+                        <li><i class="fa-solid fa-thumbtack"></i> Pinned</li>
+                        <li><i class="fa-solid fa-box-archive"></i> Archived</li>
+                        <li><i class="fa-solid fa-robot"></i> Bots</li>
+                    </ul>
+                </aside>
+
+                <main class="chat">
+                    <header class="chat-header">
+                        <h2 id="pageTitle">💬 All Chats</h2>
+                        <div class="header-right">
+                            <input type="text" id="searchInput" placeholder="Search messages...">
+                            <button id="settingsBtn"><i class="fa-solid fa-gear"></i></button>
+                            <div class="menu">
+                                <button id="menuBtn">⋮</button>
+                                <div class="menu-content" id="menuContent">
+                                    <button id="clearChatBtn">🗑 Clear Chat</button>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+
+                    <div id="replyPreview" class="reply-preview" style="display:none;">
+                        <div class="reply-info">
+                            <strong id="replyUser"></strong>
+                            <p id="replyText"></p>
+                        </div>
+                        <button id="cancelReply">✖</button>
+                    </div>
+
+                    <div id="pinnedContainer" class="pinned-container" style="display:none;">
+                        <strong>📌 Pinned Message</strong>
+                        <p id="pinnedText"></p>
+                    </div>
+
+                    <section class="messages" id="messages"></section>
+        
+                    <footer>
+                        <select id="userSelect">
+                            <option value="Kush">Kush</option>
+                            <option value="Alex">Alex</option>
+                            <option value="Emma">Emma</option>
+                            <option value="John">John</option>
+                        </select>
+                        <button id="emojiBtn">😊</button>
+                        <label for="imageInput" id="imageBtn">📎</label>
+                        <input type="file" id="imageInput" accept="image/*" hidden>
+                        <input id="messageInput" type="text" placeholder="Message All Chats">
+                        <button id="sendBtn"><i class="fa-solid fa-paper-plane"></i></button>
+                    </footer>
+
+                    <div id="emojiPicker" class="emoji-picker">
+                        <span>😀</span><span>😁</span><span>😂</span><span>🤣</span><span>😊</span><span>😍</span>
+                        <span>😎</span><span>🥳</span><span>🤔</span><span>😢</span><span>😡</span><span>❤️</span>
+                        <span>👍</span><span>👏</span><span>🔥</span><span>🎉</span><span>🚀</span><span>💻</span>
+                    </div>
+                </main>
+            </div>
+
+            <!-- Space Page -->
+            <!-- Space Page -->
+<div id="spacePage" class="page">
+
+    <div class="space-page">
+
+        <!-- LEFT PANEL -->
+        <div class="space-left">
+
+            <div class="space-header">
+                <h1>🌐 Spaces</h1>
+                <p>Create collaborative spaces for chatting, sharing and working together.</p>
+            </div>
+
+            <div class="space-search">
+                <input type="text" placeholder="Search spaces...">
+            </div>
+
+            <button class="create-space-btn">
+                <i class="fa-solid fa-plus"></i>
+                Create Space
+            </button>
+
+            <div class="space-list">
+
+                <div class="space-card">
+                    <div class="space-icon">💻</div>
+
+                    <div class="space-info">
+                        <h3>Coding Space</h3>
+                        <p>25 Members • 6 Online</p>
+                    </div>
+
+                    <button class="open-space">
+                        Enter Space
+                    </button>
+                </div>
+
+                <div class="space-card">
+                    <div class="space-icon">🎓</div>
+
+                    <div class="space-info">
+                        <h3>College Space</h3>
+                        <p>120 Members • 18 Online</p>
+                    </div>
+
+                    <button class="open-space">
+                        Enter Space
+                    </button>
+                </div>
+
+                <div class="space-card">
+                    <div class="space-icon">🎮</div>
+
+                    <div class="space-info">
+                        <h3>Gaming Space</h3>
+                        <p>340 Members • 51 Online</p>
+                    </div>
+
+                    <button class="open-space">
+                        Enter Space
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="space-workspace">
+
+            <div class="workspace-header">
+                <h2 id="workspaceTitle">Select a Space</h2>
+                <p id="workspaceDescription">
+                    Choose a space from the left.
+                </p>
+            </div>
+
+            <div class="workspace-tabs">
+                <button class="tab active">💬 Chat</button>
+                <button class="tab">📰 Feed</button>
+                <button class="tab">📁 Files</button>
+                <button class="tab">📅 Events</button>
+                <button class="tab">🤖 AI</button>
+                <button class="tab">👥 Members</button>
+            </div>
+
+            <div id="workspaceContent">
+                Welcome to DoChat Spaces.
+            </div>
+        </div>
+    </div>
+</div>
+
+
+         <!-- Moments Page -->
+<div id="storiesPage" class="page">
+
+    <div class="moments-page">
+
+        <div class="moments-header">
+            <h1>📷 Moments</h1>
+            <p>See what's happening with your friends.</p>
+        </div>
+
+        <div class="your-moment">
+
+            <div class="moment-avatar moment-trigger">
+                <img src="https://i.pravatar.cc/60?img=12">
+            </div>
+
+            <div class="moment-info">
+                <h3>Your Moment</h3>
+                <p>Share what's on your mind...</p>
+            </div>
+
+            <button class="share-btn">
+                Share
+            </button>
+
+        </div>
+
+        <h2 class="section-title">Recent Updates</h2>
+
+        <div class="moment-list">
+
+            <div class="moment-card">
+
+                <div class="moment-avatar moment-trigger">
+                <img src="https://i.pravatar.cc/60?img=12">
+            </div>
+
+                <div class="moment-info">
+
+                    <div class="moment-top">
+
+                        <h3>Alex</h3>
+
+                        <span>5 min ago</span>
+
+                    </div>
+
+                    <p>"Finally the weekend 😌"</p>
+
+                </div>
+
+            </div>
+
+            <div class="moment-card">
+
+                <div class="moment-avatar moment-trigger">
+                <img src="https://i.pravatar.cc/60?img=12">
+            </div>
+
+                <div class="moment-info">
+
+                    <div class="moment-top">
+
+                        <h3>Emma</h3>
+
+                        <span>1 hour ago</span>
+
+                    </div>
+
+                    <p>"Coffee before coding ☕"</p>
+
+                </div>
+
+            </div>
+
+            <div class="moment-card">
+
+                <div class="moment-avatar moment-trigger">
+                <img src="https://i.pravatar.cc/60?img=12">
+            </div>
+
+                <div class="moment-info">
+
+                    <div class="moment-top">
+
+                        <h3>John</h3>
+
+                        <span>Yesterday</span>
+
+                    </div>
+
+                    <p>"Gaming night with friends 🎮"</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+            <!-- Games Page -->
+            <div id="gamesPage" class="page">
+                <div class="home">
+                    <h1>🎮 Games</h1>
+                    <h3>Play games inside DoChat.</h3>
+                </div>
+            </div>
+
+            <!-- AI Page -->
+            <div id="aiPage" class="page">
+                <div class="home">
+                    <h1>🤖 AI</h1>
+                    <h3>Your personal AI assistant.</h3>
+                </div>
+            </div>
+
+            <!-- Settings Page -->
+            <div id="settingsPage" class="page">
+                <div class="home">
+                    <h1>⚙ Settings</h1>
+                    <h3>Manage your DoChat preferences.</h3>
+                </div>
+            </div>
+
+        </div> <!-- End of .page-container -->
+    </div> <!-- End of .app -->
+            
+    <!-- UI Overlays & Context Menus -->
+    <div id="contextMenu" class="context-menu">
+        <div class="menu-item" id="editMessage">✏️ Edit</div>
+        <div class="menu-item" id="copyMessage">📋 Copy</div>
+        <div class="menu-item" id="replyMessage">↩️ Reply</div>
+        <div class="menu-item" id="pinMessage">📌 Pin Message</div>
+        <div class="menu-item" id="deleteMessage">🗑️ Delete</div>
+    </div>
+    
+    <div id="toast" class="toast"></div>
+
+    <!-- Profile Modal -->
+    <div id="profileModal" class="profile-modal">
+        <div class="profile-card">
+            <span id="closeProfile">&times;</span>
+            <img id="profileAvatar" src="https://i.pravatar.cc/120?u=Kush">
+            <h2 id="profileName">Kush</h2>
+            <p>@kush</p>
+            <div class="status">🟢 Online</div>
+            <hr>
+            <p>Joined: June 2026</p>
+            <p id="messageCount">Messages: 0</p>
+            <p id="currentChannelProfile">Current Channel: All Chats</p>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="settingsModal" class="settings-modal">
+        <div class="settings-panel">
+            <span id="closeSettings">&times;</span>
+            <h2>⚙️ Settings</h2>
+            <label>Username</label>
+            <input id="usernameInput" type="text" placeholder="Your name">
+            <br><br>
+            <label>Profile Picture</label>
+            <input id="profileImageInput" type="file" accept="image/*">
+            <br><br>
+            <button id="saveSettings">Save Changes</button>
+            <h3>Theme</h3>
+            <label><input type="radio" name="theme" value="dark"> 🌙 Dark</label>
+            <br><br>
+            <label><input type="radio" name="theme" value="light"> ☀️ Light</label>
+            <br><br>
+        </div>
+    </div>
+
+<!-- Moment Viewer Modal -->
+
+<div id="momentViewer" class="moment-viewer">
+
+    <div class="moment-modal">
+
+        <span id="closeMoment">&times;</span>
+
+        <img
+            id="momentImage"
+            src="https://picsum.photos/700/500?random=10"
+        >
+
+        <div class="moment-details">
+
+            <h2 id="momentUser">
+                Alex
+            </h2>
+
+            <p id="momentCaption">
+                "Finally the weekend 😌"
+            </p>
+
+            <small id="momentTime">
+                5 minutes ago
+            </small>
+
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- Scripts -->
+    <script src="js/dom.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/bot.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/contextMenu.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="js/spaces.js"></script>
+    <script src="js/moments.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

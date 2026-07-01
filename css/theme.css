@@ -1,0 +1,20 @@
+:root {
+    --bg: #313338;
+    --sidebar: #1e1f22;
+    --channel: #2b2d31;
+    --card: #404249;
+    --text: #ffffff;
+}
+
+.light-theme {
+    --bg: #f2f3f5;
+    --sidebar: #ffffff;
+    --channel: #e3e5e8;
+    --card: #d7d9dc;
+    --text: #1f2328;
+}
+
+.light-theme #userSelect {
+    background: #e3e5e8;
+    color: black;
+}

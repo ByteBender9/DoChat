@@ -1,0 +1,36 @@
+.page {
+    display: none;
+    width: 100%;
+    flex: 1;
+}
+
+.active-page {
+    display: flex;
+}
+
+.home {
+    width: 100%;
+    padding: 40px;
+}
+
+.home h1 {
+    font-size: 40px;
+}
+
+.home h3 {
+    color: #888;
+    margin-top: 8px;
+}
+
+.home-card {
+    margin-top: 20px;
+    padding: 20px;
+    background: var(--channel);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.home-card:hover {
+    transform: translateY(-4px);
+}
