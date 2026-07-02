@@ -43,7 +43,8 @@
 .nav-item:hover,
 .nav-item.active {
     background: #5865F2;
-    border-radius: 16px;
+    border-radius: 14px;
+    color: white;
 }
 
 .nav-item::before {
@@ -60,5 +61,44 @@
 
 .nav-item:hover::before,
 .nav-item.active::before {
-    height: 24%;
+    content: "";
+    position: absolute;
+    left: -8px;
+    width: 4px;
+    height: 24px;
+    border-radius: 10px;
+    background: white;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: #202225;
+    color: white;
+    font-size: 13px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: .2s;
+}
+
+.nav-item:hover::after {
+    opacity: 1;
+}
+
+.nav-item:hover{
+    transform: scale(1.08);
+}
+
+.logo:hover{
+    transform: rotate(10deg);
 }

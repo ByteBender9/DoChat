@@ -89,7 +89,7 @@ function renderMembers(){
 function renderPinned(){
 
     const pinned =
-        pinnedMessages[currentCategory];
+        pinnedMessages[currentChat];
 
     if(!pinned){
 

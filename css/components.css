@@ -205,3 +205,28 @@
     border-radius: 20px;
 }
 .messages::-webkit-scrollbar-track { background: transparent; }
+
+/*universal card styles*/
+.card {
+    border-radius: 16px;
+    padding: 22px;
+    transition: .25s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+/*universal button styles*/
+.primary-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.primary-btn:hover {
+    transform: scale(1.04);
+}

@@ -10,5 +10,8 @@
 @import url("responsive.css");
 @import url("space.css");
 @import url("workspace.css");
-@import url("moments.css");
+@import url("moment.css");
 @import url("momentViewer.css");
+@import url("ai.css");
+@import url("games.css");
+@import url("settingsPage.css");

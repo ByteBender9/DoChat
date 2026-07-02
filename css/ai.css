@@ -1,0 +1,59 @@
+.ai-page{
+    width:100%;
+    padding:35px;
+}
+
+.ai-header{
+    margin-bottom:30px;
+}
+
+.ai-header p{
+    color:#888;
+    margin-top:8px;
+}
+
+.ai-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.ai-card{
+
+    padding:25px;
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.ai-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.ai-card i{
+
+    font-size:32px;
+
+    margin-bottom:20px;
+
+}
+
+.ai-card h3{
+
+    margin-bottom:10px;
+
+}
+
+.ai-card p{
+
+    color:#999;
+
+    line-height:1.5;
+
+}
