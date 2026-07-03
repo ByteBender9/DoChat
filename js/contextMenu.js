@@ -7,25 +7,24 @@ window.addEventListener("click", () => {
 // Edit
 // =======================
 
+// =======================
+// Edit
+// =======================
+
 editMessageBtn.addEventListener("click", () => {
 
     if (selectedMessageIndex === null) return;
 
     const newText = prompt(
         "Edit message:",
-        chats[currentCategory][selectedMessageIndex].text
+        conversations[currentChat][selectedMessageIndex].text
     );
 
     if (newText && newText.trim() !== "") {
+        conversations[currentChat][selectedMessageIndex].text = newText;
 
-        chats[currentCategory][selectedMessageIndex].text = newText;
-        chats[currentCategory][selectedMessageIndex].edited = true;
-
-        saveChats();
         renderMessages();
-
         showToast("✏️ Message edited");
-
     }
 
     contextMenu.classList.remove("show");
@@ -41,8 +40,8 @@ copyMessageBtn.addEventListener("click", async () => {
     if (selectedMessageIndex === null) return;
 
     await navigator.clipboard.writeText(
-        chats[currentCategory][selectedMessageIndex].text
-    );
+    conversations[currentChat][selectedMessageIndex].text
+);
 
     showToast("📋 Message copied");
 
@@ -58,9 +57,7 @@ deleteMessageBtn.addEventListener("click", () => {
 
     if (selectedMessageIndex === null) return;
 
-    chats[currentCategory].splice(selectedMessageIndex, 1);
-
-    saveChats();
+    conversations[currentChat].splice(selectedMessageIndex, 1);
 
     renderMessages();
 
@@ -78,21 +75,21 @@ pinMessageBtn.addEventListener("click", () => {
 
     if (selectedMessageIndex === null) return;
 
-    const selected = chats[currentCategory][selectedMessageIndex];
-    const pinned = pinnedMessages[currentCategory];
+    const selected = conversations[currentChat][selectedMessageIndex];
+    const pinned = pinnedMessages[currentChat];
 
     if (
         pinned &&
         pinned.id === selected.id
     ) {
 
-        delete pinnedMessages[currentCategory];
+        delete pinnedMessages[currentChat];
 
         showToast("📍 Message unpinned");
 
     } else {
 
-        pinnedMessages[currentCategory] = selected;
+        pinnedMessages[currentChat] = selected;
 
         showToast("📌 Message pinned");
 
@@ -114,10 +111,10 @@ replyMessageBtn.addEventListener("click", () => {
 
     if(selectedMessageIndex === null) return;
 
-    replyData = chats[currentCategory][selectedMessageIndex];
+    replyData = conversations[currentChat][selectedMessageIndex];
 
     replyUser.textContent =
-        "Replying to " + replyData.user;
+    "Replying to " + replyData.sender;
 
     replyText.textContent =
         replyData.text;

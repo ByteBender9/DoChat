@@ -65,8 +65,10 @@
                         <input type="text" placeholder="Search chats...">
                     </div>
                     <div class="chat-list">
-                        <div class="chat-item active" data-name="Alex" data-status="Last seen 2 min ago" data-avatar="https://i.pravatar.cc/100?img=1">
-                            <div class="chat-avatar">A</div>
+                        <div class="chat-item active" data-name="Alex" data-status="Last seen 2 min ago" data-avatar="images/profiles/alex.webp">
+                            <div class="chat-avatar">
+                                <img src="images/profiles/alex.webp" alt="Alex">
+                            </div>
                             <div class="chat-info">
                                 <h3>Alex</h3>
                                 <p>Hey, are you free?</p>
@@ -74,8 +76,10 @@
                             <span class="chat-time">2m</span>
                         </div>
 
-                        <div class="chat-item" data-name="Emma" data-status="Last seen 5 min ago" data-avatar="https://i.pravatar.cc/100?img=5">
-                            <div class="chat-avatar">E</div>
+                        <div class="chat-item" data-name="Emma" data-status="Last seen 5 min ago" data-avatar="images/profiles/emma.webp">
+                            <div class="chat-avatar">
+                                <img src="images/profiles/emma.webp" alt="Emma">
+                            </div>
                             <div class="chat-info">
                                 <h4>Emma</h4>
                                 <p>Let's catch up later.</p>
@@ -83,8 +87,10 @@
                             <span class="chat-time">5m</span>
                     </div>
 
-                        <div class="chat-item" data-name="John" data-status="Last seen yesterday" data-avatar="https://i.pravatar.cc/100?img=8">
-                            <div class="chat-avatar">J</div>
+                        <div class="chat-item" data-name="John" data-status="Last seen yesterday" data-avatar="images/profiles/john.webp">
+                            <div class="chat-avatar">
+                                <img src="images/profiles/john.webp" alt="John">
+                            </div>
                             <div class="chat-info">
                                 <h4>John</h4>
                                 <p>See you tomorrow.</p>
@@ -92,8 +98,10 @@
                             <span class="chat-time">Yesterday</span>
                         </div>
                     </div>
-                    <div class="chat-item">
-                        <div class="chat-avatar">K</div>
+                    <div class="chat-item" data-name="Kush" data-status="Last seen 2 days ago" data-avatar="images/profiles/kush.webp">
+                        <div class="chat-avatar">
+                            <img src="images/profiles/kush.webp" alt="Kush">
+                        </div>
                         <div class="chat-info">
                             <h4>Kush</h4>
                             <p>📷 Sent a photo</p>
@@ -107,7 +115,7 @@
                         <div class="chat-user-header">
                             <img id="chatHeaderAvatar" src="https://i.pravatar.cc/100?img=12">
                         <div class="chat-user-info">
-                        <h2 id="chatheaderName">Chats</h2>
+                        <h2 id="chatHeaderName">Chats</h2>
                         <p id="chatHeaderStatus">Select a conversation</p>
                         </div>
                         </div>
@@ -140,12 +148,6 @@
                     <section class="messages" id="messages"></section>
         
                     <footer>
-                        <select id="userSelect">
-                            <option value="Kush">Kush</option>
-                            <option value="Alex">Alex</option>
-                            <option value="Emma">Emma</option>
-                            <option value="John">John</option>
-                        </select>
                         <button id="emojiBtn">😊</button>
                         <label for="imageInput" id="imageBtn">📎</label>
                         <input type="file" id="imageInput" accept="image/*" hidden>

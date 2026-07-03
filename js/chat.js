@@ -19,6 +19,13 @@ let selectedImage = null;
 let selectedMessageIndex = null;
 let replyData = null;
 
+const avatars = {
+    Alex: "images/profiles/alex.webp",
+    Emma: "images/profiles/emma.webp",
+    John: "images/profiles/john.webp",
+    Kush: "images/profiles/kush.webp"
+};
+
 function renderMessages() {
     messages.innerHTML = "";
     const keyword = searchInput.value.toLowerCase();
@@ -38,7 +45,7 @@ function renderMessages() {
         message.innerHTML = `
             <div class="avatar profile-trigger" data-user="${msg.sender}">
                 <span class="status-dot ${userStatus[msg.sender] ? "online" : "offline"}"></span>
-                <img src="https://i.pravatar.cc/40?img=${msg.sender.length}" alt="${msg.sender}">
+                <img src="${avatars[msg.sender] || "images/profiles/default.webp"}" alt="${msg.sender}">
             </div>
 
             <div class="content">
@@ -105,7 +112,7 @@ function sendMessage(){
     if(text === "" && !selectedImage) return;
 
     conversations[currentChat].push({
-        sender: localStorage.getItem("username") || "Kush",
+        sender: "Kush",
         text: text,
         image: selectedImage,
         time: getCurrentTime(), // Ensure this function is defined globally
@@ -155,17 +162,17 @@ if (headerStatus) {
 }
 
 if (headerAvatar) {
-    headerAvatar.src = item.dataset.avatar || "https://i.pravatar.cc/100";
-}
+    headerAvatar.src = item.dataset.avatar || avatars[currentChat];
         input.placeholder = "Message " + currentChat;
         
         renderMessages();
-    });
+    };
+});
 });
 
 // Initial Setup
 if (headerName) headerName.textContent = "Alex";
 if(headerStatus) headerStatus.textContent = "Last seen 2 min ago";
-if(headerAvatar) headerAvatar.src = "https://i.pravatar.cc/100?img=1";
+if(headerAvatar) headerAvatar.src = "images/profiles/alex.webp";
 
 renderMessages();

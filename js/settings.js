@@ -43,18 +43,3 @@ saveSettings.addEventListener("click", () => {
     showToast("✅ Settings Saved");
 
 });
-
-userSelect.addEventListener("change", () => {
-
-    Object.keys(userStatus).forEach(user => {
-        userStatus[user] = false;
-    });
-
-    userStatus[userSelect.value] = true;
-
-    saveStatus();
-
-    renderMessages();
-    renderMembers();
-
-});

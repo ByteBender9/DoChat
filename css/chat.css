@@ -303,3 +303,10 @@
     font-size:13px;
     color:gray;
 }
+
+.chat-avatar img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    object-fit:cover;
+}
