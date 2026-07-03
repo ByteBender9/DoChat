@@ -310,3 +310,25 @@
     border-radius:50%;
     object-fit:cover;
 }
+
+.chat-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:15px;
+}
+
+#newChatBtn{
+    width:36px;
+    height:36px;
+    border:none;
+    border-radius:10px;
+    background:#5865F2;
+    color:white;
+    cursor:pointer;
+    transition:.25s;
+}
+
+#newChatBtn:hover{
+    transform:scale(1.08);
+}

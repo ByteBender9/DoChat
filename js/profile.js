@@ -4,7 +4,7 @@ function openProfile(user){
 
     profileName.textContent = user;
 
-    profileAvatar.src = `https://i.pravatar.cc/120?u=${user}`;
+    profileAvatar.src = avatars[user] || "images/profiles/default.webp";
 
     let total = 0;
 

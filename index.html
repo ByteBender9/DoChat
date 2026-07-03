@@ -60,10 +60,29 @@
             <!-- Chat Page -->
             <div id="chatPage" class="page">
                 <aside class="sidebar">
+                   <div class="chat-top">
                     <h2>Chats</h2>
-                    <div class="chat-search">
+                    <button id="newChatBtn">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </div>
+                <div class="chat-search">
                         <input type="text" placeholder="Search chats...">
                     </div>
+<!-- Notes Chat Item -->
+                    <div class="chat-item"
+                    data-name="Notes"
+                    data-status="Private"
+                    data-avatar="images/profiles/notes.webp">
+                    <div class="chat-avatar">
+                        <img src="images/profiles/notes.webp">
+                    </div>
+                    <div class="chat-info">
+                        <h4>Notes</h4>
+                        <p>Save messages and ideas</p>
+                    </div>
+                </div>
+
                     <div class="chat-list">
                         <div class="chat-item active" data-name="Alex" data-status="Last seen 2 min ago" data-avatar="images/profiles/alex.webp">
                             <div class="chat-avatar">
@@ -98,22 +117,13 @@
                             <span class="chat-time">Yesterday</span>
                         </div>
                     </div>
-                    <div class="chat-item" data-name="Kush" data-status="Last seen 2 days ago" data-avatar="images/profiles/kush.webp">
-                        <div class="chat-avatar">
-                            <img src="images/profiles/kush.webp" alt="Kush">
-                        </div>
-                        <div class="chat-info">
-                            <h4>Kush</h4>
-                            <p>📷 Sent a photo</p>
-                        </div>
-                        <span class="chat-time">2d</span>
-                    </div>
+                   
                 </aside>
 
                 <main class="chat">
                     <header class="chat-header">
                         <div class="chat-user-header">
-                            <img id="chatHeaderAvatar" src="https://i.pravatar.cc/100?img=12">
+                            <img id="chatHeaderAvatar" src="images/profiles/alex.webp">
                         <div class="chat-user-info">
                         <h2 id="chatHeaderName">Chats</h2>
                         <p id="chatHeaderStatus">Select a conversation</p>
@@ -510,7 +520,7 @@
     <div id="profileModal" class="profile-modal">
         <div class="profile-card">
             <span id="closeProfile">&times;</span>
-            <img id="profileAvatar" src="https://i.pravatar.cc/120?u=Kush">
+            <img id="profileAvatar" src="images/profiles/kush.webp">
             <h2 id="profileName">Kush</h2>
             <p>@kush</p>
             <div class="status">🟢 Online</div>

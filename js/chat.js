@@ -1,4 +1,10 @@
 const conversations = {
+    Notes: [
+        { sender:"Kush",
+        text:"Welcome to your personal notes.",
+        time:"Now"
+    }
+],
     Alex: [
         { sender: "Alex", text: "Hey, are you free?", time: "10:00 AM" },
         { sender: "Kush", text: "Yes 😊", time: "10:01 AM" }
@@ -9,9 +15,6 @@ const conversations = {
     John: [
         { sender: "John", text: "See you tomorrow.", time: "12:15 PM" }
     ],
-    Kush: [
-        { sender: "Kush", text: "📷 Sent a photo", time: "01:00 PM" }
-    ]
 };
 
 let currentChat = "Alex";
@@ -20,6 +23,7 @@ let selectedMessageIndex = null;
 let replyData = null;
 
 const avatars = {
+    Notes:"images/profiles/notes.webp",
     Alex: "images/profiles/alex.webp",
     Emma: "images/profiles/emma.webp",
     John: "images/profiles/john.webp",
@@ -58,7 +62,7 @@ function renderMessages() {
 
                 ${msg.reply ? `
                     <div class="reply-box">
-                        <strong>${msg.reply.user}</strong>
+                        <strong>${msg.reply.sender}</strong>
                         <small>${msg.reply.text}</small>
                     </div>
                 ` : ""}

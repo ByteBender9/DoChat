@@ -8,3 +8,11 @@ input.addEventListener("keypress", e => {
         sendMessage();
     }
 });
+
+document
+.getElementById("newChatBtn")
+.addEventListener("click",()=>{
+
+    alert("New Chat coming soon 🚀");
+
+});
