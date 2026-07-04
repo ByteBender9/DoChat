@@ -9,10 +9,38 @@ input.addEventListener("keypress", e => {
     }
 });
 
-document
-.getElementById("newChatBtn")
-.addEventListener("click",()=>{
+const newChatBtn = document.getElementById("newChatBtn");
+const newChatModal = document.getElementById("newChatModal");
+const closeNewChat = document.getElementById("closeNewChat");
+const createChatBtn = document.getElementById("createChatBtn");
+const newChatName = document.getElementById("newChatName");
 
-    alert("New Chat coming soon 🚀");
+newChatBtn.addEventListener("click", () => {
+    newChatModal.classList.add("show");
+});
+
+closeNewChat.addEventListener("click", () => {
+    newChatModal.classList.remove("show");
+});
+
+newChatModal.addEventListener("click", (e) => {
+    if (e.target === newChatModal) {
+        newChatModal.classList.remove("show");
+    }
+});
+
+createChatBtn.addEventListener("click", () => {
+
+    const name = newChatName.value.trim();
+
+    if(name === ""){
+
+        alert("Please enter a name.");
+
+        return;
+
+    }
+
+    addNewChat(name);
 
 });

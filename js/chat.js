@@ -179,4 +179,73 @@ if (headerName) headerName.textContent = "Alex";
 if(headerStatus) headerStatus.textContent = "Last seen 2 min ago";
 if(headerAvatar) headerAvatar.src = "images/profiles/alex.webp";
 
+
+function addNewChat(name) {
+
+    // Don't allow empty names
+    if (!name.trim()) {
+        alert("Please enter a name.");
+        return;
+    }
+
+    // Prevent duplicates
+    const exists = document.querySelector(
+        `.chat-item[data-name="${name}"]`
+    );
+
+    if (exists) {
+        alert("Chat already exists.");
+        return;
+    }
+
+    // Create conversation
+    conversations[name] = [];
+
+    // Create sidebar item
+    const chat = document.createElement("div");
+
+    chat.className = "chat-item";
+
+    chat.dataset.name = name;
+    chat.dataset.status = "Offline";
+    chat.dataset.avatar = "images/profiles/default.webp";
+
+    chat.innerHTML = `
+        <div class="chat-avatar">
+            <img src="images/profiles/default.webp">
+        </div>
+
+        <div class="chat-info">
+            <h4>${name}</h4>
+            <p>Start chatting...</p>
+        </div>
+
+        <span class="chat-time">Now</span>
+    `;
+
+    document.querySelector(".chat-list").appendChild(chat);
+    document.getElementById("newChatModal").classList.remove("show");
+    document.getElementById("newChatName").value = "";
+
+    chat.addEventListener("click", () => {
+
+    document.querySelectorAll(".chat-item").forEach(item=>{
+        item.classList.remove("active");
+    });
+
+    chat.classList.add("active");
+
+    currentChat = name;
+
+    headerName.textContent = name;
+    headerStatus.textContent = "Offline";
+    headerAvatar.src = "images/profiles/default.webp";
+
+    input.placeholder = "Message " + name;
+
+    renderMessages();
+
+});
+
+}
 renderMessages();
