@@ -33,8 +33,7 @@ const avatars = {
 function renderMessages() {
     messages.innerHTML = "";
     const keyword = searchInput.value.toLowerCase();
-
-    // 1. Map to keep track of the ORIGINAL index before filtering
+    // ORIGINAL index before filtering
     const filteredMessages = conversations[currentChat]
         .map((msg, originalIndex) => ({ ...msg, originalIndex }))
         .filter(msg => (msg.text || "").toLowerCase().includes(keyword));
@@ -45,13 +44,11 @@ function renderMessages() {
 
         // Safeguard missing properties (like time)
         const displayTime = msg.time ?? "";
-
         message.innerHTML = `
             <div class="avatar profile-trigger" data-user="${msg.sender}">
                 <span class="status-dot ${userStatus[msg.sender] ? "online" : "offline"}"></span>
                 <img src="${avatars[msg.sender] || "images/profiles/default.webp"}" alt="${msg.sender}">
             </div>
-
             <div class="content">
                 <h4>
                     ${msg.sender}
@@ -71,7 +68,6 @@ function renderMessages() {
                 ${msg.image ? `<img class="chat-image" src="${msg.image}">` : ""}
             </div>
         `;
-
         messages.appendChild(message);
 
         // Profile click
@@ -92,7 +88,6 @@ function renderMessages() {
 
             const pinned = pinnedMessages[currentChat];
             const actualMessage = conversations[currentChat][selectedMessageIndex];
-
             if (
                 pinned &&
                 pinned.text === actualMessage.text &&
@@ -102,11 +97,9 @@ function renderMessages() {
             } else {
                 pinMessageBtn.textContent = "📌 Pin Message";
             }
-
             contextMenu.classList.add("show");
         });
     });
-
     messages.scrollTop = messages.scrollHeight;
 }
 
@@ -114,7 +107,6 @@ function renderMessages() {
 function sendMessage(){
     const text = input.value.trim();
     if(text === "" && !selectedImage) return;
-
     conversations[currentChat].push({
         sender: "Kush",
         text: text,
@@ -122,15 +114,12 @@ function sendMessage(){
         time: getCurrentTime(), // Ensure this function is defined globally
         reply: replyData
     });
-
     imageInput.value = "";
     selectedImage = null;
     input.value = "";
     replyData = null;
     if (replyPreview) replyPreview.style.display = "none";
-    
     renderMessages();
-    //if (typeof botReply === "function") botReply(text);
 }
 
 // Search messages
@@ -155,20 +144,16 @@ chatItems.forEach(item => {
     item.addEventListener("click", () => {
         chatItems.forEach(chat => chat.classList.remove("active"));
         item.classList.add("active");
-        
         currentChat = item.dataset.name;
         if (headerName) {
     headerName.textContent = currentChat;
 }
-
 if (headerStatus) {
     headerStatus.textContent = item.dataset.status || "Offline";
 }
-
 if (headerAvatar) {
     headerAvatar.src = item.dataset.avatar || avatars[currentChat];
         input.placeholder = "Message " + currentChat;
-        
         renderMessages();
     };
 });
@@ -187,17 +172,14 @@ function addNewChat(name) {
         alert("Please enter a name.");
         return;
     }
-
     // Prevent duplicates
     const exists = document.querySelector(
         `.chat-item[data-name="${name}"]`
     );
-
     if (exists) {
         alert("Chat already exists.");
         return;
     }
-
     // Create conversation
     conversations[name] = [];
 
@@ -219,7 +201,6 @@ function addNewChat(name) {
             <h4>${name}</h4>
             <p>Start chatting...</p>
         </div>
-
         <span class="chat-time">Now</span>
     `;
 
@@ -227,14 +208,13 @@ function addNewChat(name) {
     document.getElementById("newChatModal").classList.remove("show");
     document.getElementById("newChatName").value = "";
 
-    chat.addEventListener("click", () => {
-
+    chat.addEventListener("click", () => 
+        {
     document.querySelectorAll(".chat-item").forEach(item=>{
         item.classList.remove("active");
     });
 
     chat.classList.add("active");
-
     currentChat = name;
 
     headerName.textContent = name;

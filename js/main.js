@@ -1,8 +1,6 @@
 renderMessages();
 renderPinned();
-
 sendBtn.addEventListener("click", sendMessage);
-
 input.addEventListener("keypress", e => {
     if (e.key === "Enter") {
         sendMessage();
@@ -30,17 +28,10 @@ newChatModal.addEventListener("click", (e) => {
 });
 
 createChatBtn.addEventListener("click", () => {
-
     const name = newChatName.value.trim();
-
     if(name === ""){
-
         alert("Please enter a name.");
-
         return;
-
     }
-
     addNewChat(name);
-
 });

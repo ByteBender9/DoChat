@@ -19,41 +19,26 @@
 }
 
 .ai-card{
-
     padding:25px;
-
     border-radius:18px;
-
     cursor:pointer;
-
     transition:.25s;
-
 }
 
 .ai-card:hover{
-
     transform:translateY(-6px);
-
 }
 
 .ai-card i{
-
     font-size:32px;
-
     margin-bottom:20px;
-
 }
 
 .ai-card h3{
-
     margin-bottom:10px;
-
 }
 
 .ai-card p{
-
     color:#999;
-
     line-height:1.5;
-
 }
