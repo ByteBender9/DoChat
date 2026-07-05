@@ -266,66 +266,105 @@
             <h1>📷 Moments</h1>
             <p>See what's happening with your friends.</p>
         </div>
-
         <div class="your-moment">
-            <div class="moment-avatar moment-trigger">
-                <img src="https://i.pravatar.cc/60?img=12">
+            <img
+            class="your-avatar"
+            src="images/profiles/kush.webp"
+            alt="Kush">
+            <div class="your-moment-content">
+                <h3>Kush</h3>
+                <input
+                id="momentInput"
+                type="text"
+                placeholder=" What's happening today?">
+                <div class="moment-tools">
+                    <label for="momentImageInput" class="tool-btn">
+                        📷 Photo
+                    </label>
+                    <input
+                    type="file"
+                    id="momentImageInput"
+                    accept="image/*"
+                    hidden>
+                    <button id="shareMomentBtn">Share Moment</button>
+                </div>
             </div>
-
-            <div class="moment-info">
-                <h3>Your Moment</h3>
-                <p>Share what's on your mind...</p>
-            </div>
-
-            <button class="share-btn">
-                Share
-            </button>
         </div>
-
         <h2 class="section-title">Recent Updates</h2>
         <div class="moment-list">
-
+            
             <div class="moment-card card">
-                <div class="moment-avatar moment-trigger">
-                <img src="https://i.pravatar.cc/60?img=12">
-            </div>
-                <div class="moment-info">
-                    <div class="moment-top">
+                <div class="moment-header">
+                    <div class="moment-avatar moment-trigger">
+                        <img src="images/profiles/alex.webp">
+                    </div>
+                    <div class="moment-user">
                         <h3>Alex</h3>
                         <span>5 min ago</span>
                     </div>
-                    <p>"Finally the weekend 😌"</p>
+                </div>
+                <img
+                 class="moment-photo moment-trigger"
+                 src="images/moments/alex.jpg"
+                 alt="Alex Moment">
+                 <div class="moment-body">
+                    <p>Finally the weekend 😌</p>
+                    <div class="moment-actions">
+                        <button>❤️ Like</button>
+                        <button>💬 Comment</button>
+                        <button>↗ Share</button>
+                    </div>
                 </div>
             </div>
 
             <div class="moment-card card">
-                <div class="moment-avatar moment-trigger">
-                <img src="https://i.pravatar.cc/60?img=12">
-            </div>
-                <div class="moment-info">
-                    <div class="moment-top">
+                <div class="moment-header">
+                    <div class="moment-avatar moment-trigger">
+                        <img src="images/profiles/emma.webp">
+                    </div>
+                    <div class="moment-user">
                         <h3>Emma</h3>
                         <span>1 hour ago</span>
                     </div>
-                    <p>"Coffee before coding ☕"</p>
+                </div>
+                <img
+                 class="moment-photo moment-trigger"
+                 src="images/moments/emma.jpg"
+                 alt="Emma Moment">
+                 <div class="moment-body">
+                    <p>Coffee before coding ☕</p>
+                    <div class="moment-actions">
+                        <button>❤️ Like</button>
+                        <button>💬 Comment</button>
+                        <button>↗ Share</button>
+                    </div>
                 </div>
             </div>
-
+            
             <div class="moment-card card">
-                <div class="moment-avatar moment-trigger">
-                <img src="https://i.pravatar.cc/60?img=12">
-            </div>
-                <div class="moment-info">
-                    <div class="moment-top">
+                <div class="moment-header">
+                    <div class="moment-avatar moment-trigger">
+                        <img src="images/profiles/john.webp">
+                    </div>
+                    <div class="moment-user">
                         <h3>John</h3>
                         <span>Yesterday</span>
                     </div>
-                    <p>"Gaming night with friends 🎮"</p>
+                </div>
+                <img 
+                class="moment-photo moment-trigger"
+                src="images/moments/john.jpg"
+                alt="John Moment">
+                <div class="moment-body">
+                    <p>Gaming night with friends 🎮</p>
+                    <div class="moment-actions">
+                        <button>❤️ Like</button>
+                        <button>💬 Comment</button>
+                        <button>↗ Share</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
 
   <!-- Play Page -->
 <div id="gamesPage" class="page">
