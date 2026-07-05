@@ -1,4 +1,4 @@
-const conversations = {
+let conversations = JSON.parse(localStorage.getItem("conversations")) || {
     Notes: [
         { sender:"Kush",
         text:"Welcome to your personal notes.",
@@ -16,6 +16,13 @@ const conversations = {
         { sender: "John", text: "See you tomorrow.", time: "12:15 PM" }
     ],
 };
+
+function saveConversations() {
+    localStorage.setItem(
+        "conversations",
+        JSON.stringify(conversations)
+    );
+}
 
 let currentChat = "Alex";
 let selectedImage = null;
@@ -119,6 +126,7 @@ function sendMessage(){
     input.value = "";
     replyData = null;
     if (replyPreview) replyPreview.style.display = "none";
+    saveConversations();
     renderMessages();
 }
 
@@ -131,6 +139,7 @@ searchInput.addEventListener("input", () => {
 clearChatBtn.addEventListener("click", () => {
     if (!confirm("Clear this conversation?")) return;
     conversations[currentChat] = [];
+    saveConversations();
     renderMessages();
 });
 
@@ -182,6 +191,7 @@ function addNewChat(name) {
     }
     // Create conversation
     conversations[name] = [];
+    saveConversations();
 
     // Create sidebar item
     const chat = document.createElement("div");
