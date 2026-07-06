@@ -259,112 +259,63 @@
 </div>
 
 
-         <!-- Moments Page -->
+<!-- Moments Page -->
 <div id="storiesPage" class="page">
     <div class="moments-page">
         <div class="moments-header">
             <h1>📷 Moments</h1>
             <p>See what's happening with your friends.</p>
         </div>
-        <div class="your-moment">
-            <img
-            class="your-avatar"
-            src="images/profiles/kush.webp"
-            alt="Kush">
-            <div class="your-moment-content">
-                <h3>Kush</h3>
-                <input
-                id="momentInput"
-                type="text"
-                placeholder=" What's happening today?">
-                <div class="moment-tools">
-                    <label for="momentImageInput" class="tool-btn">
-                        📷 Photo
-                    </label>
-                    <input
-                    type="file"
-                    id="momentImageInput"
-                    accept="image/*"
-                    hidden>
-                    <button id="shareMomentBtn">Share Moment</button>
+        <div class="moments-layout">
+<!-- LEFT PANEL -->
+ <aside class="moments-sidebar">
+    <input
+    type="text"
+    class="moment-search"
+    placeholder="Search moments...">
+    <div class="my-story-item active">
+        <img src="images/profiles/kush.webp">
+        <div>
+            <h3>My Moment</h3>
+            <span>Add a new moment</span>
+        </div>
+    </div>
+    
+    <h4 class="story-title">Recent Moments</h4>
+        <div class="story-list">
+            <div class="story-item active" data-user="alex">
+                <img src="images/profiles/alex.webp">
+                <div>
+                    <h3>Alex</h3>
+                    <span>5 min ago</span>
                 </div>
             </div>
-        </div>
-        <h2 class="section-title">Recent Updates</h2>
-        <div class="moment-list">
             
-            <div class="moment-card card">
-                <div class="moment-header">
-                    <div class="moment-avatar moment-trigger">
-                        <img src="images/profiles/alex.webp">
-                    </div>
-                    <div class="moment-user">
-                        <h3>Alex</h3>
-                        <span>5 min ago</span>
-                    </div>
-                </div>
-                <img
-                 class="moment-photo moment-trigger"
-                 src="images/moments/alex.jpg"
-                 alt="Alex Moment">
-                 <div class="moment-body">
-                    <p>Finally the weekend 😌</p>
-                    <div class="moment-actions">
-                        <button>❤️ Like</button>
-                        <button>💬 Comment</button>
-                        <button>↗ Share</button>
-                    </div>
+            <div class="story-item" data-user="emma">
+                <img src="images/profiles/emma.webp">
+                <div>
+                    <h3>Emma</h3>
+                    <span>1 hour ago</span>
                 </div>
             </div>
 
-            <div class="moment-card card">
-                <div class="moment-header">
-                    <div class="moment-avatar moment-trigger">
-                        <img src="images/profiles/emma.webp">
-                    </div>
-                    <div class="moment-user">
-                        <h3>Emma</h3>
-                        <span>1 hour ago</span>
-                    </div>
-                </div>
-                <img
-                 class="moment-photo moment-trigger"
-                 src="images/moments/emma.jpg"
-                 alt="Emma Moment">
-                 <div class="moment-body">
-                    <p>Coffee before coding ☕</p>
-                    <div class="moment-actions">
-                        <button>❤️ Like</button>
-                        <button>💬 Comment</button>
-                        <button>↗ Share</button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="moment-card card">
-                <div class="moment-header">
-                    <div class="moment-avatar moment-trigger">
-                        <img src="images/profiles/john.webp">
-                    </div>
-                    <div class="moment-user">
-                        <h3>John</h3>
-                        <span>Yesterday</span>
-                    </div>
-                </div>
-                <img 
-                class="moment-photo moment-trigger"
-                src="images/moments/john.jpg"
-                alt="John Moment">
-                <div class="moment-body">
-                    <p>Gaming night with friends 🎮</p>
-                    <div class="moment-actions">
-                        <button>❤️ Like</button>
-                        <button>💬 Comment</button>
-                        <button>↗ Share</button>
-                    </div>
+            <div class="story-item" data-user="john">
+                <img src="images/profiles/john.webp">
+                <div>
+                    <h3>John</h3>
+                    <span>Yesterday</span>
                 </div>
             </div>
         </div>
+    </aside>
+<!-- RIGHT PANEL -->
+<section class="moment-view" id="momentView">
+    <div class="viewer-placeholder">
+        <h2>Select a Moment</h2>
+        <p>Choose a moment from the left to view it.</p>
+        </div>
+    </section>
+</div>
 
   <!-- Play Page -->
 <div id="gamesPage" class="page">
@@ -577,7 +528,6 @@
     </div>
 
 <!-- Moment Viewer Modal -->
-
 <div id="momentViewer" class="moment-viewer">
     <div class="moment-modal">
         <span id="closeMoment">&times;</span>
