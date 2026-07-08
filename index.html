@@ -183,11 +183,9 @@
                 <h1>🌐 Spaces</h1>
                 <p>Create collaborative spaces for chatting, sharing and working together.</p>
             </div>
-
             <div class="space-search">
                 <input type="text" placeholder="Search spaces...">
             </div>
-
             <button class="create-space-btn primary-btn">
                 <i class="fa-solid fa-plus"></i>
                 Create Space
@@ -205,7 +203,7 @@
                 <div class="space-card" data-space="college">
                     <div class="space-icon">🎓</div>
                     <div class="space-info">
-                        <h3>College Spaces</h3>
+                        <h3>College Space</h3>
                         <p>0 Members • 0 Online</p>
                     </div>
                 </div>
@@ -216,11 +214,20 @@
                         <p>0 Members • 0 Online</p>
                     </div>
                 </div>
+                <div class="space-card" data-space="design">
+                    <div class="space-icon">🎨</div>
+                    <div class="space-info">
+                        <h3>Design Space</h3>
+                        <p>0 Members • 0 Online</p>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <!-- RIGHT PANEL -->
-       <div id="workspaceContent">
+    </div>
+</div>
+<!-- RIGHT PANEL -->
+<div class="space-workspace">
+    <div id="workspaceContent">
         <div class="workspace-banner">
             <h2>Welcome to Coding Space 👋</h2>
             <p>Collaborate, share resources and chat with your team.</p>
@@ -235,21 +242,19 @@
                 <ul>
                     <li># general</li>
                     <li># python</li>
-                    <li># web-development</li>
-                    <li># resources</li>
+                    <li># web-development</li>                        <li># resources</li>
                 </ul>
             </div>
             <div class="workspace-card">
                 <h3>👥 Online Members</h3>
                 <p>Alex, Emma, John, Kush...</p>
             </div>
-          <div class="workspace-card">
-            <h3>📁 Shared Files</h3>
-            <p>No files uploaded yet.</p>
-          </div>
+            <div class="workspace-card">
+                <h3>📁 Shared Files</h3>
+                <p>No files uploaded yet.</p>
+            </div>
         </div>
     </div>
-</div>
 </div>
 <!-- Moments Page -->
 <div id="storiesPage" class="page">
@@ -299,7 +304,7 @@
                 </div>
             </div>
         </div>
-    </aside>
+</aside>
 <!-- RIGHT PANEL -->
 <section class="moment-view" id="momentView">
     <div class="story-viewer">
@@ -359,16 +364,12 @@
 </section>
   <!-- Play Page -->
 <div id="gamesPage" class="page">
-
     <div class="games-page">
-
         <div class="games-header">
             <h1>🎮 Play</h1>
             <p>Play mini games inside DoChat.</p>
         </div>
-
         <div class="games-grid">
-
             <div class="game-card card">
                 <div class="game-icon">♟️</div>
                 <h3>Chess</h3>
@@ -382,32 +383,26 @@
                 <p>Classic arcade game.</p>
                 <button>Play</button>
             </div>
-
             <div class="game-card card">
                 <div class="game-icon">❌⭕</div>
                 <h3>Tic Tac Toe</h3>
                 <p>Play against friends.</p>
                 <button>Play</button>
             </div>
-
             <div class="game-card card">
                 <div class="game-icon">🔢</div>
                 <h3>2048</h3>
                 <p>Merge tiles to win.</p>
                 <button>Play</button>
             </div>
-
             <div class="game-card card">
                 <div class="game-icon">🎲</div>
                 <h3>More Games</h3>
                 <p>Coming soon...</p>
                 <button disabled>Soon</button>
             </div>
-
         </div>
-
     </div>
-
 </div>
 
           <!-- AI Page -->
@@ -458,7 +453,7 @@
     </div>
 </div>
 
-          <!-- Settings Page -->
+    <!-- Settings Page -->
 <div id="settingsPage" class="page">
     <div class="settings-page">
         <div class="settings-header">
@@ -517,10 +512,8 @@
         </div>
     </div>
 </div>
-
-        </div> <!-- End of .page-container -->
-    </div> <!-- End of .app -->
-            
+</div> <!-- End of .page-container -->
+</div> <!-- End of .app -->
     <!-- UI Overlays & Context Menus -->
     <div id="contextMenu" class="context-menu">
         <div class="menu-item" id="editMessage">✏️ Edit</div>
@@ -568,46 +561,48 @@
     </div>
 
 <!-- Moment Viewer Modal -->
-<div id="momentViewer" class="moment-viewer">
-    <div class="moment-modal">
-        <span id="closeMoment">&times;</span>
-        <img
-            id="momentImage"
-            src="https://picsum.photos/700/500?random=10"
-        >
-        <div class="moment-details">
-            <h2 id="momentUser">
-                Alex
-            </h2>
-            <p id="momentCaption">
-                "Finally the weekend 😌"
-            </p>
-            <small id="momentTime">
-                5 minutes ago
-            </small>
-
+    <div id="momentViewer" class="moment-viewer">
+        <div class="moment-modal">
+            <span id="closeMoment">&times;</span>
+            <img
+                id="momentImage"
+                src="https://picsum.photos/700/500?random=10">
+            <div class="moment-details">
+                <h2 id="momentUser">Alex</h2>
+                <p id="momentCaption">"Finally the weekend 😌"</p>
+                <small id="momentTime">5 minutes ago</small>
+            </div>
         </div>
-
     </div>
 
+<!-- Create Space Modal -->
+<div id="createSpaceModal" class="modal">
+    <div class="modal-content">
+        <h2>🌐 Create Space</h2>
+        <input
+            id="spaceNameInput"
+            type="text"
+            placeholder="Space name...">
+        <input
+            id="spaceEmojiInput"
+            type="text"
+            maxlength="2"
+            placeholder="Emoji (💻)">
+        <button id="createSpaceConfirm">Create Space</button>
+        <button id="closeSpaceModal">Cancel</button>
+    </div>
 </div>
 
 <!-- New Chat Modal -->
-
 <div id="newChatModal" class="modal">
     <div class="modal-content">
         <h2>➕ New Chat</h2>
         <input
             id="newChatName"
             type="text"
-            placeholder="Enter contact name..."
-        >
-        <button id="createChatBtn">
-            Create Chat
-        </button>
-        <button id="closeNewChat">
-            Cancel
-        </button>
+            placeholder="Enter contact name...">
+        <button id="createChatBtn">Create Chat</button>
+        <button id="closeNewChat">Cancel</button>
     </div>
 </div>
 
