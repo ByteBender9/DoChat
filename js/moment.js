@@ -6,7 +6,6 @@ const moments = {
         profile: "images/profiles/alex.webp",
         caption: "Finally the weekend 😌"
     },
-
     emma: {
         name: "Emma",
         time: "1 hour ago",
@@ -14,7 +13,6 @@ const moments = {
         profile: "images/profiles/emma.webp",
         caption: "Coffee before coding ☕"
     },
-
     john: {
         name: "John",
         time: "Yesterday",
@@ -28,13 +26,10 @@ const storyTime = document.getElementById("storyTime");
 const storyImage = document.getElementById("storyImage");
 const storyCaption = document.getElementById("storyCaption");
 const storyAvatar = document.querySelector(".story-avatar");
-
 const replyInput = document.querySelector(".story-reply input");
 
 document.querySelectorAll(".story-item").forEach(item => {
-
     item.addEventListener("click", () => {
-
         document
             .querySelectorAll(".story-item")
             .forEach(card => card.classList.remove("active"));
@@ -42,7 +37,6 @@ document.querySelectorAll(".story-item").forEach(item => {
         item.classList.add("active");
 
         const user = item.dataset.user;
-
         const moment = moments[user];
 
         storyName.textContent = moment.name;
