@@ -1,63 +1,79 @@
 # 💬 DoChat
 
-A modern desktop chat application built using **HTML, CSS, and JavaScript**.
+A modern desktop communication platform built with **HTML, CSS, and Vanilla JavaScript**.
 
-DoChat is a personal project focused on creating a clean and modern communication platform with features inspired by popular messaging apps while developing its own unique identity.
+DoChat is a personal project focused on creating a clean, desktop-inspired messaging experience while improving frontend development skills through real-world application design.
 
 ---
 
 ## ✨ Features
 
-### ✅ Chat
-- Real-time chat interface (UI)
+### 🏠 Home
+- Modern dashboard
+- Quick access cards
+- Clean desktop interface
+
+### 💬 Chat
+- Modern messaging interface
+- Multiple conversations
 - Send messages
 - Edit messages
 - Delete messages
-- Copy messages
 - Reply to messages
 - Pin / Unpin messages
-- Search messages
+- Copy messages
+- Message search
 - Emoji picker
-- Image sharing (UI)
-- User status
-- Profile popup
+- Image sharing
+- User profile popup
+- Theme support
 
 ### 🌐 Spaces
-- Dedicated Spaces page
-- Workspace layout
-- Modern desktop design
+- Dedicated Spaces workspace
+- Favorite spaces
+- Multiple spaces
+- Dynamic workspace layout
+- Create Space modal
+- Workspace announcements
+- Channels section
+- Members section
+- Shared files section
 
 ### 📷 Moments
-- Moments page
-- Share Moment UI
-- Moment cards
-- Story viewer (In Progress)
+- Story-style interface
+- Recent moments list
+- Story viewer
+- Dynamic moment switching
+- Reply input
 
 ### 🤖 AI
-- AI page (UI)
+- AI Assistant interface
+- Modern dashboard layout
 
 ### 🎮 Games
-- Games page (UI)
+- Games hub
+- Game library interface
 
 ### ⚙️ Settings
+- User profile settings
 - Theme switching
-- Profile settings
-- User customization
+- Customization panel
 
 ---
 
-## 🛠 Technologies
+## 🛠️ Tech Stack
 
 - HTML5
 - CSS3
-- JavaScript (Vanilla)
+- Vanilla JavaScript
 - LocalStorage
+- Font Awesome
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
 
-```
+```text
 DoChat/
 │
 ├── css/
@@ -69,23 +85,30 @@ DoChat/
 
 ---
 
-## 🚀 Future Roadmap
+## 🚧 Project Status
 
-- [ ] Login System
-- [ ] Real-time Messaging
-- [ ] Firebase / Node.js Backend
-- [ ] File Sharing
-- [ ] Voice & Video Calls
-- [ ] Notifications
-- [ ] AI Assistant
-- [ ] Multiplayer Games
-- [ ] Responsive Design
+**Current Version:** Alpha
+
+DoChat is under active development with new features and improvements being added regularly.
+
+---
+
+## 📌 Upcoming Improvements
+
+- Complete Spaces functionality
+- Improve Moments experience
+- Interactive mini-games
+- AI integration
+- Backend development
+- User authentication
+- Real-time messaging
+- Database integration
 
 ---
 
 ## 📸 Screenshots
 
-Coming Soon...
+Screenshots will be added as development progresses.
 
 ---
 
@@ -93,8 +116,12 @@ Coming Soon...
 
 **Kushal Sarkar**
 
-GitHub: https://github.com/ByteBender9
+GitHub: **https://github.com/ByteBender9**
 
 ---
 
-⭐ If you like this project, consider giving it a star.
+## ⭐ Support
+
+If you like this project, consider giving it a **⭐ Star** on GitHub.
+
+Feedback, suggestions, and contributions are always welcome.
