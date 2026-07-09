@@ -4,5 +4,32 @@
 # VS Code
 .vscode/
 
-# Node.js (for future)
+# Node.js
 node_modules/
+package-lock.json
+npm-debug.log*
+
+# Environment files
+.env
+.env.local
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Build folders
+dist/
+build/
+
+# Coverage
+coverage/
+
+# Cache
+.cache/
+
+# OS files
+Thumbs.db
