@@ -3,7 +3,6 @@
     padding:40px;
     height:100%;
     width: 100%;
-    max-width: 1200px;
     overflow-y:auto;
 }
 
@@ -53,4 +52,41 @@
 .home-card p{
     color:gray;
     line-height:1.6;
+}
+.home-layout{
+    display:grid;
+    grid-template-columns:3.5fr 1fr;
+    gap:24px;
+    align-items:start;
+}
+
+.notification-panel{
+    background:var(--card);
+    border-radius:18px;
+    padding:24px;
+    min-height:560px;
+}
+
+.notification-header{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding-bottom:15px;
+    margin-bottom:20px;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.notification-header i{
+    color:#5865F2;
+    font-size:18px;
+}
+
+.notification-header h3{
+    margin:0;
+}
+
+.notification-empty{
+    color:gray;
+    text-align:center;
+    margin-top:140px;
 }
