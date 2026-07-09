@@ -2,7 +2,7 @@ const pages = {
     home: document.getElementById("homePage"),
     chat: document.getElementById("chatPage"),
     space: document.getElementById("spacePage"),
-    story: document.getElementById("storiesPage"),
+    moments: document.getElementById("momentsPage"),
     games: document.getElementById("gamesPage"),
     ai: document.getElementById("aiPage"),
     settings: document.getElementById("settingsPage")

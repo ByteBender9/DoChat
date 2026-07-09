@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="app">
-        <!-- Main Sidebar Navigation -->
+<!-- Main Sidebar Navigation -->
         <aside class="navigation">
             <div class="logo">
                 <h2>D</h2>
@@ -25,7 +25,7 @@
             <div class="nav-item" data-page="space" data-tooltip="Space">
                 <i class="fa-solid fa-users"></i>
             </div>
-            <div class="nav-item" data-page="story" data-tooltip="moments">
+            <div class="nav-item" data-page="moments" data-tooltip="moments">
                 <i class="fa-solid fa-camera"></i>
             </div>
             <div class="nav-item" data-page="games" data-tooltip="play">
@@ -41,23 +41,38 @@
             </div>
         </aside>
 
-        <!-- Dynamic Page Container -->
+<!-- Dynamic Page Container -->
         <div class="page-container">
 
-            <!-- Home Page -->
+    <!-- Home Page -->
             <div id="homePage" class="page active-page">
                 <div class="home">
-                    <h1>👋 Welcome to DoChat</h1>
-                    <h3>Chat. Create. Connect.</h3>
-                    <br>
-                    <div class="home-card">💬 Continue Chatting</div>
-                    <div class="home-card">👥 Communities</div>
-                    <div class="home-card">📷 Stories</div>
-                    <div class="home-card">🤖 AI Assistant</div>
+                    <div class="home-header">
+                        <h1>Home</h1>
+                        <p>Everything in one place.</p>
+                    </div>
+                    <div class="home-grid">
+                        <div class="home-card" id="homeChatCard">
+                            <h3>Continue Chat</h3>
+                            <p>Resume your conversations.</p>
+                        </div>
+                        <div class="home-card" id="homeSpacesCard">
+                            <h3>Spaces</h3>
+                            <p>Collaborate with your communities.</p>
+                        </div>
+                        <div class="home-card" id="homeMomentsCard">
+                            <h3>Moments</h3>
+                            <p>View recent moments.</p>
+                        </div>
+                        <div class="home-card" id="homeAICard">
+                            <h3>AI Assistant</h3>
+                            <p>Ask questions and get instant help.</p>
+                        </div>
+                    </div>
                 </div>
-            </div> 
+            </div>
 
-            <!-- Chat Page -->
+    <!-- Chat Page -->
             <div id="chatPage" class="page">
                 <aside class="sidebar">
                    <div class="chat-top">
@@ -258,7 +273,7 @@
 </div>
 </div>
 <!-- Moments Page -->
-<div id="storiesPage" class="page">
+<div id="momentsPage" class="page">
     <div class="moments-page">
         <div class="moments-header">
             <h1>📷 Moments</h1>
@@ -611,6 +626,7 @@
     <script src="js/settings.js"></script>
     <script src="js/theme.js"></script>
     <script src="js/ui.js"></script>
+    <script src="js/home.js"></script>
     <script src="js/contextMenu.js"></script>
     <script src="js/navigation.js"></script>
     <script src="js/chat.js"></script>
