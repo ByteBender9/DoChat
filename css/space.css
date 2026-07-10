@@ -223,3 +223,12 @@
     border-radius:10px;
     cursor:pointer;
 }
+
+/*search space*/
+.no-spaces-message{
+    display:none;
+    text-align:center;
+    color:gray;
+    margin:20px 0;
+    font-size:14px;
+}
