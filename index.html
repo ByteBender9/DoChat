@@ -485,7 +485,7 @@
         </div>
 
         <div class="settings-grid">
-            <div class="setting-card card">
+            <div class="setting-card card" id="profileCard">
                 <i class="fa-solid fa-user"></i>
                 <div>
                     <h3>Profile</h3>
@@ -493,7 +493,7 @@
                 </div>
             </div>
 
-            <div class="setting-card card">
+            <div class="setting-card card" id="appearanceCard">
                 <i class="fa-solid fa-palette"></i>
                 <div>
                     <h3>Appearance</h3>
@@ -501,7 +501,7 @@
                 </div>
             </div>
 
-            <div class="setting-card card">
+            <div class="setting-card card" id="notificationCard">
                 <i class="fa-solid fa-bell"></i>
                 <div>
                     <h3>Notifications</h3>
@@ -509,7 +509,7 @@
                 </div>
             </div>
 
-            <div class="setting-card card">
+            <div class="setting-card card" id="privacyCard">
                 <i class="fa-solid fa-shield-halved"></i>
                 <div>
                     <h3>Privacy</h3>
@@ -517,7 +517,7 @@
                 </div>
             </div>
 
-            <div class="setting-card card">
+            <div class="setting-card card" id="storageCard">
                 <i class="fa-solid fa-hard-drive"></i>
                 <div>
                     <h3>Storage</h3>
@@ -525,7 +525,7 @@
                 </div>
             </div>
 
-            <div class="setting-card">
+            <div class="setting-card" id="aboutCard">
                 <i class="fa-solid fa-circle-info"></i>
                 <div>
                     <h3>About DoChat</h3>
@@ -533,11 +533,19 @@
                 </div>
             </div>
         </div>
+        <div id="settingsContent" class="settings-content"></div>
+        <div id="settingsPopup" class="settings-popup">
+            <div class="settings-popup-box">
+                <div class="settings-popup-header">
+                    <h2 id="popupTitle">Settings</h2>
+                    <button id="closePopup">&times;</button>
+                </div>
+                <div id="popupBody"></div>
+            </div>
+        </div>
     </div>
 </div>
-</div> <!-- End of .page-container -->
-</div> <!-- End of .app -->
-    <!-- UI Overlays & Context Menus -->
+<!-- UI Overlays & Context Menus -->
     <div id="contextMenu" class="context-menu">
         <div class="menu-item" id="editMessage">✏️ Edit</div>
         <div class="menu-item" id="copyMessage">📋 Copy</div>
@@ -644,5 +652,15 @@
     <script src="js/spaces.js"></script>
     <script src="js/moment.js"></script>
     <script src="js/main.js"></script>
+    
+    <div id="settingsPopup" class="settings-popup">
+        <div class="settings-popup-box">
+            <div class="settings-popup-header">
+                <h2 id="popupTitle">Settings</h2>
+                <button id="closePopup">&times;</button>
+            </div>
+            <div id="popupBody"></div>
+        </div>
+    </div>
 </body>
 </html>

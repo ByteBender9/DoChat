@@ -43,3 +43,127 @@
 .setting-card p {
     color: #888;
 }
+
+/* Settings Popup */
+
+.settings-popup{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.55);
+    backdrop-filter: blur(4px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: popup .25s ease;
+}
+@keyframes popup{
+    from{
+        opacity: 0;
+        transform: scale(.9);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+#closePopup:hover{
+    color: #5865F2;
+}
+.form-group input:focus,
+.form-group textarea:focus{
+    border: 1px solid #5865F2;
+}
+.settings-popup-box{
+    width: 700px;
+    max-width: 90%;
+    background: #2f3136;
+    border-radius: 16px;
+    padding: 24px;
+    color: white;
+    box-shadow: 0 15px 40px rgba(0,0,0,.4);
+}
+
+.settings-popup-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.settings-popup-header h2{
+    margin: 0;
+}
+
+#closePopup{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#popupBody{
+    min-height: 250px;
+}
+
+.profile-form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.profile-avatar{
+    width:90px;
+    height:90px;
+    margin:0 auto;
+    border-radius:50%;
+    background:#40444b;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:38px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.form-group label{
+    font-size:14px;
+    font-weight:600;
+}
+
+.form-group input,
+.form-group textarea{
+    background:#202225;
+    border:none;
+    outline:none;
+    color:white;
+    padding:12px;
+    border-radius:10px;
+    font-size:15px;
+}
+
+.form-group textarea{
+    resize:none;
+    height:90px;
+}
+
+.save-profile-btn{
+    margin-top:10px;
+    border:none;
+    border-radius:10px;
+    padding:12px;
+    background:#5865F2;
+    color:white;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.save-profile-btn:hover{
+    background:#4752c4;
+}
