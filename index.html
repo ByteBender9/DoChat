@@ -83,120 +83,109 @@
                 </div>
             </div>
 <!-- Chat Page -->
-            <div id="chatPage" class="page">
-                <aside class="sidebar">
-                   <div class="chat-top">
-                    <h2>Chats</h2>
-                    <button id="newChatBtn">
-                        <i class="fa-solid fa-plus"></i>
-                    </button>
-                </div>
-                <div class="chat-search">
-                        <input type="text" placeholder="Search chats...">
-                    </div>
+<div id="chatPage" class="page">
+    <aside class="sidebar">
+        <div class="chat-top">
+            <h2>Chats</h2>
+            <button id="newChatBtn">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+        <div class="chat-search">
+            <input type="text" placeholder="Search chats...">
+        </div>
 <!-- Notes Chat Item -->
-                    <div class="chat-item"
-                    data-name="Notes"
-                    data-status="Private"
-                    data-avatar="images/profiles/notes.webp">
-                    <div class="chat-avatar">
-                        <img src="images/profiles/notes.webp">
-                    </div>
-                    <div class="chat-info">
-                        <h4>Notes</h4>
-                        <p>Save messages and ideas</p>
-                    </div>
-                </div>
-
-                    <div class="chat-list">
-                        <div class="chat-item active" data-name="Alex" data-status="Last seen 2 min ago" data-avatar="images/profiles/alex.webp">
-                            <div class="chat-avatar">
-                                <img src="images/profiles/alex.webp" alt="Alex">
-                            </div>
-                            <div class="chat-info">
-                                <h3>Alex</h3>
-                                <p>Hey, are you free?</p>
-                            </div>
-                            <span class="chat-time">2m</span>
-                        </div>
-
-                        <div class="chat-item" data-name="Emma" data-status="Last seen 5 min ago" data-avatar="images/profiles/emma.webp">
-                            <div class="chat-avatar">
-                                <img src="images/profiles/emma.webp" alt="Emma">
-                            </div>
-                            <div class="chat-info">
-                                <h4>Emma</h4>
-                                <p>Let's catch up later.</p>
-                            </div>
-                            <span class="chat-time">5m</span>
-                    </div>
-
-                        <div class="chat-item" data-name="John" data-status="Last seen yesterday" data-avatar="images/profiles/john.webp">
-                            <div class="chat-avatar">
-                                <img src="images/profiles/john.webp" alt="John">
-                            </div>
-                            <div class="chat-info">
-                                <h4>John</h4>
-                                <p>See you tomorrow.</p>
-                            </div>
-                            <span class="chat-time">Yesterday</span>
-                        </div>
-                    </div>
-                   
-                </aside>
-
-                <main class="chat">
-                    <header class="chat-header">
-                        <div class="chat-user-header">
-                            <img id="chatHeaderAvatar" src="images/profiles/alex.webp">
-                        <div class="chat-user-info">
-                        <h2 id="chatHeaderName">Chats</h2>
-                        <p id="chatHeaderStatus">Select a conversation</p>
-                        </div>
-                        </div>
-                        
-                        <div class="header-right">
-                            <input type="text" id="searchInput" placeholder="Search...">
-                            <button id="settingsBtn"><i class="fa-solid fa-gear"></i></button>
-                            <div class="menu">
-                                <button id="menuBtn">⋮</button>
-                                <div class="menu-content" id="menuContent">
-                                    <button id="clearChatBtn">🗑 Clear Chat</button>
-                                </div>
-                            </div>
-                        </div>
-                    </header>
-
-                    <div id="replyPreview" class="reply-preview" style="display:none;">
-                        <div class="reply-info">
-                            <strong id="replyUser"></strong>
-                            <p id="replyText"></p>
-                        </div>
-                        <button id="cancelReply">✖</button>
-                    </div>
-
-                    <div id="pinnedContainer" class="pinned-container" style="display:none;">
-                        <strong>📌 Pinned Message</strong>
-                        <p id="pinnedText"></p>
-                    </div>
-
-                    <section class="messages" id="messages"></section>
-        
-                    <footer>
-                        <button id="emojiBtn">😊</button>
-                        <label for="imageInput" id="imageBtn">📎</label>
-                        <input type="file" id="imageInput" accept="image/*" hidden>
-                        <input id="messageInput" type="text" placeholder="Message All Chats">
-                        <button id="sendBtn"><i class="fa-solid fa-paper-plane"></i></button>
-                    </footer>
-
-                    <div id="emojiPicker" class="emoji-picker">
-                        <span>😀</span><span>😁</span><span>😂</span><span>🤣</span><span>😊</span><span>😍</span>
-                        <span>😎</span><span>🥳</span><span>🤔</span><span>😢</span><span>😡</span><span>❤️</span>
-                        <span>👍</span><span>👏</span><span>🔥</span><span>🎉</span><span>🚀</span><span>💻</span>
-                    </div>
-                </main>
+<div class="chat-item"
+    data-name="Notes"
+    data-status="Private"
+    data-avatar="images/profiles/notes.webp">
+        <div class="chat-avatar">
+            <img src="images/profiles/notes.webp">
+        </div>
+        <div class="chat-info">
+            <h4>Notes</h4>
+            <p>Save messages and ideas</p>
+        </div>
+    </div>
+    <div class="chat-list">
+        <div class="chat-item active" data-name="Alex" data-status="Last seen 2 min ago" data-avatar="images/profiles/alex.webp">
+            <div class="chat-avatar">
+                <img src="images/profiles/alex.webp" alt="Alex">
             </div>
+            <div class="chat-info">
+                <h3>Alex</h3>
+                <p>Hey, are you free?</p>
+            </div>
+            <span class="chat-time">2m</span>
+        </div>
+        <div class="chat-item" data-name="Emma" data-status="Last seen 5 min ago" data-avatar="images/profiles/emma.webp">
+            <div class="chat-avatar">
+                <img src="images/profiles/emma.webp" alt="Emma">
+            </div>
+            <div class="chat-info">
+                <h4>Emma</h4>
+                <p>Let's catch up later.</p>
+            </div>
+            <span class="chat-time">5m</span>
+        </div>
+        <div class="chat-item" data-name="John" data-status="Last seen yesterday" data-avatar="images/profiles/john.webp">
+            <div class="chat-avatar">
+                <img src="images/profiles/john.webp" alt="John">
+            </div>
+            <div class="chat-info">
+                <h4>John</h4>
+                <p>See you tomorrow.</p>
+            </div>
+            <span class="chat-time">Yesterday</span>
+        </div>
+    </div>
+</aside>
+<main class="chat">
+    <header class="chat-header">
+        <div class="chat-user-header">
+            <img id="chatHeaderAvatar" src="images/profiles/alex.webp">
+                <div class="chat-user-info">
+                    <h2 id="chatHeaderName">Chats</h2>
+                    <p id="chatHeaderStatus">Select a conversation</p>
+                </div>
+        </div>
+        <div class="header-right">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button id="settingsBtn"><i class="fa-solid fa-gear"></i></button>
+            <div class="menu">
+                <button id="menuBtn">⋮</button>
+                <div class="menu-content" id="menuContent">
+                    <button id="clearChatBtn">🗑 Clear Chat</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="replyPreview" class="reply-preview" style="display:none;">
+        <div class="reply-info">
+            <strong id="replyUser"></strong>
+                <p id="replyText"></p>
+        </div>
+        <button id="cancelReply">✖</button>
+    </div>
+    <div id="pinnedContainer" class="pinned-container" style="display:none;">
+        <strong>📌 Pinned Message</strong>
+        <p id="pinnedText"></p>
+    </div>
+    <section class="messages" id="messages"></section>
+    <footer>
+        <button id="emojiBtn">😊</button>
+        <label for="imageInput" id="imageBtn">📎</label>
+        <input type="file" id="imageInput" accept="image/*" hidden>
+        <input id="messageInput" type="text" placeholder="Message All Chats">
+        <button id="sendBtn"><i class="fa-solid fa-paper-plane"></i></button>
+        </footer>
+        <div id="emojiPicker" class="emoji-picker">
+            <span>😀</span><span>😁</span><span>😂</span><span>🤣</span><span>😊</span><span>😍</span>
+            <span>😎</span><span>🥳</span><span>🤔</span><span>😢</span><span>😡</span><span>❤️</span>
+            <span>👍</span><span>👏</span><span>🔥</span><span>🎉</span><span>🚀</span><span>💻</span>
+        </div>
+    </main>
+</div>
 
 <!-- Space Page -->
 <div id="spacePage" class="page">
@@ -428,55 +417,44 @@
     </div>
 </div>
 
-          <!-- AI Page -->
+<!-- AI Page -->
 <div id="aiPage" class="page">
     <div class="ai-page">
         <div class="ai-header">
             <h1>🤖 AI Assistant</h1>
             <p>Your smart companion for everyday tasks.</p>
         </div>
-
-        <div class="ai-grid">
-            <div class="ai-card">
-                <i class="fa-solid fa-comments"></i>
-                <h3>Chat Assistant</h3>
-                <p>Ask questions and get instant answers.</p>
+        <div class="ai-chat-container">
+            <div class="ai-welcome">
+                <h2>Hello, Kush 👋</h2>
+                <p>Choose a task or ask me anything.</p>
+                <div class="ai-shortcuts">
+                    <button class="ai-shortcut">💬 Chat</button>
+                    <button class="ai-shortcut">💻 Code</button>
+                    <button class="ai-shortcut">📄 Summarize</button>
+                    <button class="ai-shortcut">🌍 Translate</button>
+                    <button class="ai-shortcut">🎨 Image</button>
+                    <button class="ai-shortcut">💡 Ideas</button>
+                </div>
             </div>
-
-            <div class="ai-card card">
-                <i class="fa-solid fa-code"></i>
-                <h3>Code Helper</h3>
-                <p>Debug, write and explain code.</p>
+            <div class="ai-conversation" id="aiConversation">
+                <div class="ai-message ai-bot">Hello! I'm your AI assistant. How can I help today?
+                </div>
             </div>
-
-            <div class="ai-card card">
-                <i class="fa-solid fa-file-lines"></i>
-                <h3>Summarizer</h3>
-                <p>Summarize notes, articles and PDFs.</p>
-            </div>
-
-            <div class="ai-card card">
-                <i class="fa-solid fa-language"></i>
-                <h3>Translator</h3>
-                <p>Translate text into multiple languages.</p>
-            </div>
-
-            <div class="ai-card card">
-                <i class="fa-solid fa-image"></i>
-                <h3>Image Generator</h3>
-                <p>Create AI-generated images.</p>
-            </div>
-
-            <div class="ai-card">
-                <i class="fa-solid fa-lightbulb"></i>
-                <h3>Idea Generator</h3>
-                <p>Generate project and startup ideas.</p>
+            <div class="ai-input">
+                <input
+                    type="text"
+                    id="aiInput"
+                    placeholder="Ask anything...">
+                    <button id="aiSendBtn">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    </button>
             </div>
         </div>
     </div>
 </div>
 
-    <!-- Settings Page -->
+<!-- Settings Page -->
 <div id="settingsPage" class="page">
     <div class="settings-page">
         <div class="settings-header">
@@ -643,6 +621,7 @@
     <script src="js/bot.js"></script>
     <script src="js/profile.js"></script>
     <script src="js/settings.js"></script>
+    <script src="js/ai.js"></script>
     <script src="js/theme.js"></script>
     <script src="js/ui.js"></script>
     <script src="js/home.js"></script>

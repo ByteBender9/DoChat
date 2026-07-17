@@ -42,3 +42,90 @@
     color:#999;
     line-height:1.5;
 }
+
+.ai-chat-container{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    height:calc(100vh - 180px);
+}
+
+.ai-welcome{
+    background:var(--card);
+    padding:20px;
+    border-radius:16px;
+}
+
+.ai-welcome h2{
+    margin-bottom:8px;
+}
+
+.ai-shortcuts{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:20px;
+}
+
+.ai-shortcut{
+    border:none;
+    background:#5865F2;
+    color:white;
+    padding:10px 18px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.ai-shortcut:hover{
+    background:#4752c4;
+}
+
+.ai-conversation{
+    flex:1;
+    background:var(--card);
+    border-radius:16px;
+    padding:20px;
+    overflow-y:auto;
+}
+
+.ai-message{
+    max-width:70%;
+    padding:12px 16px;
+    border-radius:12px;
+    margin-bottom:15px;
+}
+
+.ai-bot{
+    background:#40444b;
+}
+
+.ai-user{
+    background:#5865F2;
+    color:white;
+    margin-left:auto;
+}
+
+.ai-input{
+    display:flex;
+    gap:12px;
+}
+
+.ai-input input{
+    flex:1;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:var(--card);
+    color:var(--text);
+    outline:none;
+}
+
+.ai-input button{
+    width:55px;
+    border:none;
+    border-radius:10px;
+    background:#5865F2;
+    color:white;
+    cursor:pointer;
+}
