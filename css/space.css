@@ -2,12 +2,14 @@
     display:grid;
     grid-template-columns:320px 1fr;
     gap:30px;
-    height:100%;
+    height:calc(100vh-80px);
 }
 
 .space-left{
     display:flex;
     flex-direction:column;
+    height: 100%;
+    overflow: hidden;
 }
 
 .space-workspace{
@@ -66,6 +68,8 @@
     border-radius:14px;
     transition:.25s;
     cursor: pointer;
+    position: relative;
+    overflow: visible;
 }
 
 .space-card:hover{
@@ -122,9 +126,7 @@
     cursor:pointer;
 }
 
-/* ===========================
-   WORKSPACE DASHBOARD
-=========================== */
+/* WORKSPACE DASHBOARD */
 
 .workspace-banner{
     background:linear-gradient(135deg,#5865F2,#7C5CFF);
@@ -231,4 +233,68 @@
     color:gray;
     margin:20px 0;
     font-size:14px;
+}
+/*rename space*/
+.rename-space-btn{
+    border:none;
+    background:transparent;
+    color:#9ca3af;
+    cursor:pointer;
+    font-size:15px;
+    padding:8px;
+    border-radius:8px;
+    transition:.2s;
+}
+
+.rename-space-btn:hover{
+    background:rgba(88,101,242,.15);
+    color:#5865F2;
+}
+.space-card{
+    position:relative;
+}
+
+.space-menu-btn{
+    background:none;
+    border:none;
+    color:#9ca3af;
+    cursor:pointer;
+    padding:8px;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.space-menu-btn:hover{
+    background:rgba(255,255,255,.08);
+}
+
+.space-menu{
+    display:none;
+    position:absolute;
+    top:0;
+    left: calc(100%+8px);
+    background:#2f3136;
+    border-radius:10px;
+    min-width:170px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+    z-index:1000;
+}
+
+.space-menu.show{
+    display:block;
+}
+
+.space-menu button{
+    width:100%;
+    border:none;
+    background:none;
+    color:white;
+    text-align:left;
+    padding:12px 16px;
+    cursor:pointer;
+}
+
+.space-menu button:hover{
+    background:#5865F2;
 }
