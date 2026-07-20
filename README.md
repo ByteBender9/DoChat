@@ -6,19 +6,39 @@ DoChat is a personal project focused on creating a clean, desktop-inspired messa
 
 ---
 
+## 👨‍💻 Developed By
+
+**Kushal Sarkar**
+
+🎓 Diploma in Computer Science & Technology
+
+---
+
+## 🌟 Highlights
+
+- Desktop-inspired messaging interface
+- Built entirely with HTML, CSS & Vanilla JavaScript
+- Modular project structure
+- Responsive design
+- LocalStorage support
+- Modern UI/UX
+
+---
+
 ## ✨ Features
 
 ### 🏠 Home
-- Modern dashboard
-- Quick access cards
-- Clean desktop interface
+- Modern desktop-inspired dashboard
+- Quick navigation cards
+- Activity overview
+- Smooth page navigation
+- Responsive interface
 
 ### 💬 Chat
-- Modern messaging interface
+- Real-time styled messaging interface
 - Multiple conversations
 - Send messages
-- Edit messages
-- Delete messages
+- Edit & delete messages
 - Reply to messages
 - Pin / Unpin messages
 - Copy messages
@@ -26,38 +46,54 @@ DoChat is a personal project focused on creating a clean, desktop-inspired messa
 - Emoji picker
 - Image sharing
 - User profile popup
+- Context menu actions
 - Theme support
 
 ### 🌐 Spaces
-- Dedicated Spaces workspace
+- Collaborative workspace system
+- Create and manage spaces
+- Rename & delete spaces
 - Favorite spaces
-- Multiple spaces
 - Dynamic workspace layout
-- Create Space modal
 - Workspace announcements
 - Channels section
 - Members section
 - Shared files section
+- Search spaces
+- Context menu for space management
 
 ### 📷 Moments
 - Story-style interface
-- Recent moments list
+- Recent moments feed
 - Story viewer
 - Dynamic moment switching
 - Reply input
+- User profile integration
 
 ### 🤖 AI
-- AI Assistant interface
-- Modern dashboard layout
+- AI Assistant dashboard
+- Dedicated AI tools interface
+- Code Helper
+- Summarizer
+- Translator
+- Image Generator
+- Idea Generator
 
 ### 🎮 Games
 - Games hub
-- Game library interface
+- Interactive game library
+- Modern game cards
+- Ready for future mini-games
 
 ### ⚙️ Settings
-- User profile settings
+- User profile management
+- Appearance settings
 - Theme switching
-- Customization panel
+- Notification settings
+- Privacy settings
+- Storage management
+- About section
+- Settings popups
 
 ---
 
@@ -65,9 +101,30 @@ DoChat is a personal project focused on creating a clean, desktop-inspired messa
 
 - HTML5
 - CSS3
-- Vanilla JavaScript
-- LocalStorage
-- Font Awesome
+- Vanilla JavaScript (ES6)
+- LocalStorage API
+- Font Awesome Icons
+- Responsive Flexbox Layout
+
+---
+## 🚀 Getting Started
+
+### Prerequisites
+
+- A modern web browser (Chrome, Edge, Firefox, or Safari)
+
+### Installation
+
+```bash
+git clone https://github.com/ByteBender9/DoChat.git
+cd DoChat
+```
+
+### Run the Application
+
+Open `index.html` in your browser to launch DoChat.
+
+> No build tools, frameworks, or package installation are required.
 
 ---
 
@@ -89,7 +146,7 @@ DoChat/
 
 **Current Version:** Alpha
 
-DoChat is under active development with new features and improvements being added regularly.
+DoChat is currently in active development. New features, UI improvements, and functionality are being added regularly.
 
 ---
 
@@ -108,15 +165,14 @@ DoChat is under active development with new features and improvements being adde
 
 ## 📸 Screenshots
 
-Screenshots will be added as development progresses.
+Coming Soon
 
 ---
 
-## 👨‍💻 Developer
-
-**Kushal Sarkar**
-
-GitHub: **https://github.com/ByteBender9**
+## 📬 Contact
+- GitHub: https://github.com/ByteBender9
+- LinkedIn: https://www.linkedin.com/in/kushalsarkar
+- Email: connect.kushals@gmail.com
 
 ---
 
